@@ -27,7 +27,7 @@ jobs:
           fetch-depth: 0
           submodules: 'recursive'
           fetch-tags: true
-          # token: ${{ secrets.GH_USER_TOKEN }}
+          token: ${{ secrets.GH_USER_TOKEN }}
       ### publish ubuntu
       - name: 'Publish Ubuntu'
         uses: ./.github/actions/github-build-ubuntu
@@ -64,7 +64,7 @@ jobs:
           fetch-depth: 0
           submodules: 'recursive'
           fetch-tags: true
-          # token: ${{ secrets.GH_USER_TOKEN }}
+          token: ${{ secrets.GH_USER_TOKEN }}
       ### publish windows
       - name: 'Publish Windows'
         uses: ./.github/actions/github-build-windows
